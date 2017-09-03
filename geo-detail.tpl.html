@@ -1,0 +1,21 @@
+<section class="geo-detail">
+  <h2>{{$ctrl.title}}</h2>
+  <table>
+    <thead>
+      <tr>
+        <th class="text-center">Código</th>
+        <th>Nombre</th>
+        <th class="text-center">Código Padre</th>
+        <th>Descripción Padre</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="row in $ctrl.rows">
+        <td class="text-center">{{row.code}}</td>
+        <td>{{row.name}}</td>
+        <td class="text-center">{{row.parentCode}}</td>
+        <td>{{row.parentName}}</td>
+      </tr>
+    </tbody>
+  </table>
+</section>

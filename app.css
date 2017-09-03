@@ -1,0 +1,47 @@
+article{
+  padding: 20px 6%;
+}
+
+.toolbar{
+  display: flex;
+  flex-flow: row nowrap;
+}
+.toolbar > * + * {
+  margin-left: 15px;
+}
+.btn{  
+  box-shadow: none;  
+  padding: 8px 14px;  
+  font-size: 14px;  
+  background: none;  
+  border: 2px solid;  
+  outline: none;
+  border-color: #9E9E9E;
+  color: #9E9E9E;
+}
+.btn:hover{
+  background-color: #9E9E9E;
+  color: white;
+}
+.btn.btn-primary{
+  border-color: #43A047;
+  color: #43A047;
+}
+.btn.btn-primary:hover{
+  background-color: #43A047;
+  color: white;
+}
+.geo-detail{
+  margin-bottom: 60px;
+}
+.geo-detail h2{
+  color: #263238;
+}
+.geo-detail table th,
+.geo-detail table td{
+  padding: 10px;
+  color: #455A64;
+}
+.text-center{
+  text-align: center;
+}

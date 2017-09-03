@@ -1,0 +1,26 @@
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="app.css">
+</head>
+<body ng-app="app" ng-controller="AppCtrl as appCtrl">
+
+  <article class="toolbar">
+    <button type="button" class="btn btn-default" ng-click="appCtrl.loadMock()">Usar ejemplo</button>
+    <file-picker on-file-upload="appCtrl.loadGeo"></file-picker>
+  </article>
+
+  <article ng-if="appCtrl.loadedFile">
+    <geo-detail title="Departamentos" rows="appCtrl.geoMap.departments"></geo-detail>
+    <geo-detail title="Provincias" rows="appCtrl.geoMap.provinces"></geo-detail>
+    <geo-detail title="Distritos" rows="appCtrl.geoMap.districts"></geo-detail>
+  </article>
+
+  <script type="text/javascript" src="angular.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="app.controller.js"></script>
+  <script type="text/javascript" src="geo.service.js"></script>
+  <script type="text/javascript" src="geo-detail.component.js"></script>
+  <script type="text/javascript" src="file-picker.component.js"></script>
+</body>
+</html>
